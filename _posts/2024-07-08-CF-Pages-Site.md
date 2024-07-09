@@ -14,7 +14,7 @@ As such, we will be reviewing how to not only host a serverless website through 
 
 ## Prerequisites
 - Git/Github
-- A [supported](https://developers.cloudflare.com/pages/framework-guides/) Frontend Framework (html, React, Jekyll, etc)
+- A [supported](https://developers.cloudflare.com/pages/framework-guides/){:target="_blank"} Frontend Framework (html, React, Jekyll, etc)
 
 ### Time Requirements
 - Create Cloudflare Account - 10mins
@@ -25,7 +25,7 @@ As such, we will be reviewing how to not only host a serverless website through 
 - Total Time w/ tutorial reading - ~2hours
 
 ## Creating a Cloudflare Account
-#### [Reference Guide](https://developers.cloudflare.com/fundamentals/setup/account/create-account/)
+#### [Reference Guide](https://developers.cloudflare.com/fundamentals/setup/account/create-account/){:target="_blank"}
 
 Create a Cloudflare account, and make sure when asked for what account tier you want to sign up for, scroll down and select the Free Tier.
 
@@ -33,7 +33,7 @@ Follow the instructions provided and then verify your email to activate your acc
 
 
 ## Enabling your Domain
-#### [Reference Guide](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/)
+#### [Reference Guide](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/){:target="_blank"}
 
 To operate, CF needs to be the entity in charge of resolving DNS requests. If you do not already have a domain, like example.com, you can buy one through Cloudflare, and skip this section as it will automatically be set up.
 
@@ -43,7 +43,7 @@ I purchased on NameCheap, and had to do this process. Simply following CF's setu
 
 At a certain point in this process CF will provide you with CF nameservers to change on your domain owners site.. You will need to login to your domain provider, such as NameCheap, and change who controls the nameserver. 
 
-![Name Servers](https://namecheap.simplekb.com/SiteContents/2-7C22D5236A4543EB827F3BD8936E153E/media/cloudflare_13.png)
+![Name Servers](https://namecheap.simplekb.com/SiteContents/2-7C22D5236A4543EB827F3BD8936E153E/media/cloudflare_13.png){:target="_blank"}
 
 After this, you should be finished. It can take up to 48hours to change, but should be much less than that. Enough time for us to complete the rest of the steps.
 
@@ -51,9 +51,9 @@ NOTE: This will leave your default domain provider in ownership of the domain. H
 
 
 ## Setting up CF Pages with Git integration
-#### [Reference Guide](https://developers.cloudflare.com/pages/get-started/git-integration/)
+#### [Reference Guide](https://developers.cloudflare.com/pages/get-started/git-integration/){:target="_blank"}
 
-We will be using the Cloudflare Pages product. This product supports automatic deployment of sites through simple Git Repo branch tracking. As such we wil need a repo to track our frontend project, either in [Github](https://github.com) or [Gitlab](https://about.gitlab.com). You will need to have a existing project to host. 
+We will be using the Cloudflare Pages product. This product supports automatic deployment of sites through simple Git Repo branch tracking. As such we wil need a repo to track our frontend project, either in [Github](https://github.com){:target="_blank"} or [Gitlab](https://about.gitlab.com){:target="_blank"}. You will need to have a existing project to host. 
 
 To begin, go to the CF Dashboard, and then to the `Workers & Pages` setion and then `Create`. This sections defaults to Workers, but we are using Pages, so change the tab along the top of the page.
 
@@ -63,7 +63,7 @@ Then you will want to configure your deployment, so CF knows when to automatical
 
 ![App Platorm](https://developers.cloudflare.com/assets/configuration_hu774af8cdb2f7c56bb2e2fd9cf02dcb70_16909_984x349_resize_q75_box_3-22959921.png)
 
-Now with your project successfully connected to CF, they will ask you to decide what the build command for the project is. They have many default ones available, and a helpful guide for most projects [here](https://developers.cloudflare.com/pages/configuration/build-configuration/).
+Now with your project successfully connected to CF, they will ask you to decide what the build command for the project is. They have many default ones available, and a helpful guide for most projects [here](https://developers.cloudflare.com/pages/configuration/build-configuration/){:target="_blank"}.
 
 EXAMPLE: 
 - For my base website, using Static HTML, there are no build instructions. Leaving it blank
@@ -78,7 +78,7 @@ When you have finished configuring your project for CF Pages, click `Save and De
 IE. `123456.project-name.pages.dev`
 
 ## Connecting Pages to our Custom Domain 
-#### [Reference Guide](https://developers.cloudflare.com/pages/how-to/redirect-to-custom-domain/)
+#### [Reference Guide](https://developers.cloudflare.com/pages/how-to/redirect-to-custom-domain/){:target="_blank"}
 
 
 Now we have accomplished importing our domain, and creating a CF Pages project configured to deploy any changes pushed to the main branch. We now have a Pages subdomain serving our site. To progress, we now want to connect this subdomain to our domain.
